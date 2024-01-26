@@ -329,6 +329,7 @@ Examples :
 
 //   #define PID_REPORT_MORE_SETTINGS    true      // If defined to true, the SENSOR output will provide more extensive json
 //                                                 // output in the PID section. Override to false to reduce json output
+// #define USE_PI_AUTOTUNING // (Ziegler-Nichols closed loop method)
 
 #define USE_THERMOSTAT                           // Add support for Thermostat
     #define THERMOSTAT_CONTROLLER_OUTPUTS         1         // Number of outputs to be controlled independently
@@ -362,7 +363,6 @@ Examples :
     #define THERMOSTAT_PEAKNUMBER_AUTOTUNE        8         // Default number of peak temperatures (max or min) to be used for the autotune PI function
     #define THERMOSTAT_TEMP_BAND_NO_PEAK_DET      1         // Default temperature band in thenths of degrees celsius within no peak will be detected
     #define THERMOSTAT_TIME_STD_DEV_PEAK_DET_OK   10        // Default standard deviation in minutes of the oscillation periods within the peak detection is successful    
-    // #define USE_PI_AUTOTUNING // (Ziegler-Nichols closed loop method)
 
 
 #endif  // _USER_CONFIG_OVERRIDE_H_
